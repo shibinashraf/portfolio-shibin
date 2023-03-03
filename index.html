@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;900&display=swap" rel="stylesheet">
+    <title>Shibin - Dev& Tech Enthusiast</title>
+</head>
+
+<style>
+    html{
+      scroll-behavior: smooth;
+    }
+    .grad{
+        background: linear-gradient(180deg, #6E74FF 0%, rgba(110, 116, 255, 0) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    .grad2{
+        background: linear-gradient(180deg, #ffffff 0%, rgba(110, 116, 255, 0) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+</style>
+
+<body class="font-[Montserrat] text-white bg-[#0F141C]">
+
+    <div id="nav" class="hidden md:flex m-auto p-8 text-xl items-center justify-end gap-16 w-full ">
+        <a href="#about" class="text-white/60 hover:text-white transition-all ease-in-out duration-500 p-4">About</a>
+        <a href="#resume" class="text-white/60 hover:text-white transition-all ease-in-out duration-500 p-4">Resume</a>
+        <a href="#projects" class="text-white/60 hover:text-white transition-all ease-in-out duration-500 p-4">Projects</a>
+        <a href="#contact" class="text-white/60 hover:text-white transition-all ease-in-out duration-500 p-4">Contact</a>
+    </div>
+    
+    <div id="home">
+        <div class="m-auto w-[70%] justify-center items-center gap-16 flex flex-col-reverse md:flex-row mt-[5%]">
+            <div>
+                <div class="flex items-end justify-center ">
+                    <div>
+                    <h1 class="text-[2rem] md:text-[3rem]  grad text font-bold">Hi I am</h1>
+                    <h2 class="text-[4rem] md:text-[5rem] -mt-6 grad2 font-bold">Shibin</h2>
+                    </div>
+                    <img class="w-[4rem] md:w-[5rem] object-contain ml-1 md:ml-4 mb-4" src="https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/premium/video-camera-dynamic-premium.png">
+                </div> 
+                <p class=" text-md md:text-lg text-slate-500 text-left">Dev & Tech Enthusiast</p>
+            </div> 
+            <img class="w-[20rem] rounded-full grayscale hover:filter-none transition-all duration-500 ease-in-out" src="https://avatars.githubusercontent.com/u/28195524?v=4">
+        </div>
+    </div>
+    
+    <div class="mt-[10%]" id="about">
+        <h1 class="text-center grad2 text-[2.4rem] uppercase font-semibold">About</h1>
+        <p class="text-center text-slate-400 w-[60%] m-auto mt-3">
+          Highly motivated Computer Science student with strong analytical skills. Experienced in designing, developing and testing code. Can quickly learn new technologies and adapt to it. Efficient in working in a team or self- directed setting.<br>
+          I am interested in roles like UIUX Designer, Front-End-Developer, Web designer, Tech Support, Programmer etc.
+        </p>
+    </div>
+</body>
+
+</html>
