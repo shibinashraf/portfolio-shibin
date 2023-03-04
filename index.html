@@ -87,10 +87,10 @@
           I am interested in roles like UIUX Designer, Front-End-Developer, Web designer, Tech Support, Programmer etc.
         </p>
       </div>
-        <img class="w-[10rem] md:w-[12rem] object-contain ml-1 md:ml-4 mb-4" src="https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/premium/copy-dynamic-premium.png">
+        <img class="w-[10rem] mt-10 md:w-[12rem] object-contain ml-1 md:ml-4 mb-4" src="https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/premium/copy-dynamic-premium.png">
     </div>
 
-    <div class="flex flex-wrap md:flex-nowrap w-11/12 md:w-[80%] justify-between items-center m-auto mt-[8%]" id="projects">
+    <div class="flex flex-wrap md:flex-nowrap w-11/12 md:w-[80%] justify-center md:justify-between items-center m-auto mt-[8%]" id="projects">
       <div class = "ml-[5%] w-11/12 md:w-[70%] ">
         <h1 class="grad2  text-[2.4rem] uppercase font-semibold">PROJECTS</h1>
         <div class="mt-8 pr-3 h-[20rem] overflow-y-scroll">
@@ -118,19 +118,35 @@
             <p class = "mt-3 text-slate-400">Generates random quotes using third party API.</p>
           </a>
           </div>
-
-
-
-
         </div>
-
-      </div>
-      
+      </div>  
         <img class="w-[10rem] mt-10 md:w-[12rem] object-contain ml-1 md:ml-4 mb-4" src="https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/premium/notebook-dynamic-premium.png">
     </div>
 
 
-    <div class=" flex flex-wrap md:flex-nowrap w-11/12 md:w-[80%] justify-between items-center m-auto mt-[10%]" id="certifications">
+    <div class="flex flex-wrap  md:flex-nowrap  w-full md:w-[80%]  justify-center md:justify-between items-center  m-auto mt-[10%]" id="whatido">
+      <div class = "ml-[5%] w-11/12 md:w-[80%] ">
+        <h1 class="ml-[5%] grad2 text-[2.4rem] uppercase font-semibold">What i do</h1>
+          <div class = "flex flex-row justify-between place-content-evenly w-11/12 md:w-[90%] overflow-x-scroll">
+          <div class = " p-8 mt-10 mx-4 my-4 bg-white/[.02] hover:bg-white/[0.05] rounded-xl transition-all duration-500 ease-in-out">
+            <h3 class = "text-2xl">UI/UX Design</h3>
+          </div>
+          <div class = "p-8 mt-10 mx-4 my-4 bg-white/[.02] hover:bg-white/[0.05] rounded-xl transition-all duration-500 ease-in-out">
+            <h3 class = "text-2xl">Frontend Dev</h3>
+          </div>
+          <div class = "p-8 mt-10 mx-4 my-4 bg-white/[.02] hover:bg-white/[0.05] rounded-xl transition-all duration-500 ease-in-out">
+            <h3 class = "text-2xl">Tech Support</h3>
+          </div>
+          <div class = "p-8 mt-10 mx-4 my-4 bg-white/[.02] hover:bg-white/[0.05] rounded-xl transition-all duration-500 ease-in-out">
+            <h3 class = "text-2xl">ML Projects</h3>
+          </div>
+      </div>
+    </div>
+        <img class="w-[10rem] mt-10 md:w-[12rem] object-contain ml-1 md:ml-4 mb-4" src="https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/premium/travel-dynamic-premium.png">
+    </div>
+
+
+    <div class=" flex flex-wrap md:flex-nowrap w-11/12 md:w-[80%] justify-center md:justify-between items-center m-auto mt-[10%]" id="certifications">
       <div class = "ml-[5%]">
         <h1 class="grad2 text-[2.4rem] uppercase font-semibold">Certifications & Achievements</h1>
         <ul class="ml-10 w-[80%] list-disc text-slate-400 mt-10 leading-loose">
@@ -143,7 +159,7 @@
           <li> Completed cyber security engineering virtual internship by SAP.</li>
         </ul>
       </div>
-        <img class="w-[10rem] md:w-[12rem] object-contain ml-1 md:ml-4 mb-4" src="https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/premium/fav-folder-dynamic-premium.png">
+        <img class="w-[10rem] mt-10 md:w-[12rem] object-contain ml-1 md:ml-4 mb-4" src="https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/premium/fav-folder-dynamic-premium.png">
     </div>
     <div class="flex flex-col justify-center items-center w-[80%] m-auto mt-[10%]" id="contact">
         <h1 class="grad2 text-[2.4rem] text-center uppercase font-semibold">Contact</h1>
@@ -156,6 +172,24 @@
         </div> 
  
     </div>
-</body>
+    <button id="to-top-button" onclick="goToTop()" title="Go To Top" class="hidden fixed z-90 bottom-8 right-8 border-0 w-16 h-16 rounded-full drop-shadow-md bg-black/[0.2] text-white text-3xl font-bold">&uarr;</button>
+        <script>
+          var toTopButton = document.getElementById("to-top-button");
+  
+          // When the user scrolls down 200px from the top of the document, show the button
+          window.onscroll = function () {
+              if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                  toTopButton.classList.remove("hidden");
+              } else {
+                  toTopButton.classList.add("hidden");
+              }
+          }
+  
+          // When the user clicks on the button, scroll to the top of the document
+          function goToTop() {
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+          }
+      </script>
+      </body>
 
 </html>
